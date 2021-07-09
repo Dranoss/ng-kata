@@ -1,0 +1,41 @@
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: calc(15vh);
+  background-color: azure;
+}
+header>nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.menu-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 80%;
+  box-shadow: var(--box-shadow-blue) 3px 3px 3px;
+  color: rgb(77, 77, 77);
+  font-size: 1.3rem;
+}
+
+.menu-item-nav{
+  box-shadow: var(--box-shadow-blue) 3px 3px 3px;
+  width: 20%;
+  &:hover{
+    cursor: pointer;
+    box-shadow: var(--box-shadow-blue) 5px 5px 5px;
+  }
+}
+
+.menu-item-counter{
+  width: 15%;
+  min-width: fit-content;
+  background-color: var(--box-shadow-blue);
+}

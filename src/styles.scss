@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --box-shadow-blue: rgba(10, 173, 214, 0.767);
+}
+
+// RESET CSS
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  width: 100%;
+}
+
+button{
+  height: calc(3vh + 3vw);
+  width: calc(5vh + 5vw);
+  background-color: rgba(39, 96, 252, 0.863);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(58, 204, 240, 0.63);
+  &:hover{
+    cursor: pointer;
+    box-shadow: 6px 6px 6px rgba(58, 204, 240, 0.63);
+  }
+}
