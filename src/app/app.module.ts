@@ -3,11 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UpComponent } from './pages/up/up.component';
-import { DownComponent } from './pages/down/down.component';
-import { ResetComponent } from './pages/reset/reset.component';
 import { CounterComponent } from './dumbComponents/counter/counter.component';
-import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
+import { DownComponent } from './layout/pages/down/down.component';
+import { ResetComponent } from './layout/pages/reset/reset.component';
+import { UpComponent } from './layout/pages/up/up.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,7 @@ import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
     UpComponent,
     DownComponent,
     ResetComponent,
-    CounterComponent,
-    NavBarComponent
+    CounterComponent
   ],
   imports: [
     BrowserModule,
