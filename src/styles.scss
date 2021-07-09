@@ -31,9 +31,9 @@ button{
   font-size: 1.5rem;
   border: none;
   border-radius: 10px;
-  box-shadow: 3px 3px 3px rgba(58, 204, 240, 0.63);
+  box-shadow: 3px 3px 3px var(--box-shadow-blue);
   &:hover{
     cursor: pointer;
-    box-shadow: 6px 6px 6px rgba(58, 204, 240, 0.63);
+    box-shadow: 6px 6px 6px var(--box-shadow-blue);
   }
 }
