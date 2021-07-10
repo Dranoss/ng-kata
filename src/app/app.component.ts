@@ -8,6 +8,7 @@ import { CounterService } from './services/counter.service';
 })
 export class AppComponent implements OnInit{
   counter = 0;
+  conditionColor = 'white';
 
   constructor(private counterService: CounterService){}
 
@@ -19,10 +20,20 @@ export class AppComponent implements OnInit{
     this.counterService.counterValue.subscribe((counterValue: number) => {
       this.counter = counterValue;
       this.saveChange(this.counter);
+      this.changeBackgroundColor();
     });
   }
 
   saveChange(counterValue: number): void{
     localStorage.setItem('counterValue', counterValue.toString());
   }
+
+  changeBackgroundColor(): void{
+    if(this.counter >= 10){
+      this.conditionColor = '#27ae60';
+    }
+    if(this.counter <= -10){
+      this.conditionColor = '#e74c3c';
+    }
+}
 }

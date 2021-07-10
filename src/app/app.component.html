@@ -14,6 +14,6 @@
     <app-counter [counter]="counter"></app-counter>
   </div>
 </header>
-<main>
+<main [ngStyle]="{'background-color': conditionColor}">
   <router-outlet></router-outlet>
 </main>
