@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CounterService } from 'src/app/services/counter.service';
 
 @Component({
   selector: 'app-down',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DownComponent implements OnInit {
 
-  constructor() { }
+  constructor(private counterService: CounterService) { }
 
   ngOnInit(): void {
+  }
+
+  sendDownCount(){
+    this.counterService.updateCounter('down');
   }
 
 }
