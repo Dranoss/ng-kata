@@ -38,13 +38,28 @@ export class CounterService {
     localStorage.setItem('actionNumber', this.actionNumber.toString())
   }
 
+  // Despite de increment/decrement function, I added a condition to multiply incrementation (or decrementation)
+  // by 2, 4, 8 every 30, 60, 120 ... clicks, is makes things funnier :p
   counterUp(): void{
-    this.counter++;
+    let x = Math.trunc(this.actionNumber/30);
+    if(x === 0){
+      this.counter++;
+    }
+    if(x > 0){
+      this.counter += x*2;
+    }
+
     this.counterValue.next(this.counter)
   }
 
   counterDown(): void{
-    this.counter--;
+    let x = Math.trunc(this.actionNumber/30);
+    if(x === 0){
+      this.counter--;
+    }
+    if(x > 0){
+      this.counter -= x*2;
+    }
     this.counterValue.next(this.counter)
   }
 

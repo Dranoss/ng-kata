@@ -29,7 +29,7 @@ export class AppComponent implements OnInit{
   }
 
   changeBackgroundColor(): void{
-    if(this.counter == 0){
+    if(this.counter < 10 && this.counter > -10){
       this.conditionColor = 'white';
     }
     if(this.counter >= 10){
