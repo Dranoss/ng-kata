@@ -48,4 +48,13 @@ export class CounterService {
     this.counterValue.next(this.counter)
   }
 
+  // here we reset the counter AND the actionNumber by sending the new value of counter to the observable stream
+  // and clearing the localStorage to restart the actionNumber value that was stored there
+  counterReset(): void{
+    this.counter = 0;
+    this.actionNumber = 0;
+    this.counterValue.next(this.counter);
+    localStorage.clear();
+  }
+
 }

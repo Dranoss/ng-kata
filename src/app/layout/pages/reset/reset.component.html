@@ -1,1 +1,5 @@
-<p>reset works!</p>
+<div id="reset-container">
+  <label class="reset-item" for="birthDate">Entrez votre date de naissance</label>
+  <input class="reset-item" name="birthDate" type="date" [(ngModel)]="birthDate">
+  <button (click)="saveBirthDate()">Envoyer</button>
+</div>
