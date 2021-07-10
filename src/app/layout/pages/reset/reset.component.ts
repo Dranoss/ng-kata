@@ -9,6 +9,7 @@ import { CounterService } from 'src/app/services/counter.service';
 export class ResetComponent implements OnInit {
 
   birthDate = '';
+  legalAgeCondition = 0;
   constructor(private counterService: CounterService) { }
 
   ngOnInit(): void {
@@ -28,9 +29,11 @@ export class ResetComponent implements OnInit {
       }
     if(age >= 18){
       this.counterService.counterReset();
+      this.legalAgeCondition = 2;
     }
     if(age < 18){
-      alert("Vous devez être une grande personne pour être autorisé.e à supporter cette lourde responsabilité qu'est le reset du compteur.... Mangez la soupe de grand-mère puis veuillez réessayer.")
+      // alert("Vous devez être une grande personne pour être autorisé.e à supporter cette lourde responsabilité qu'est le reset du compteur.... Mangez la soupe de grand-mère puis veuillez réessayer.")
+      this.legalAgeCondition = 1;
     }
   }
 }

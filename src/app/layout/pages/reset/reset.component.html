@@ -2,4 +2,7 @@
   <label class="reset-item" for="birthDate">Entrez votre date de naissance</label>
   <input class="reset-item" name="birthDate" type="date" [(ngModel)]="birthDate">
   <button (click)="saveBirthDate()">Envoyer</button>
+  <small *ngIf="legalAgeCondition === 1" class="age-info-invalid">Vous devez être une grande personne pour être autorisé.e à supporter cette lourde responsabilité qu'est la réinitialisation du compteur.... Mangez la soupe de grand-mère puis veuillez réessayer.</small>
+  <small *ngIf="legalAgeCondition === 2" class="age-info-valid">Un grand pouvoir implique de grandes responsabilités...</small>
+
 </div>

@@ -1,0 +1,24 @@
+@mixin age-info {
+  font-style: italic;
+  font-size: 1.2rem;
+  width: 40%;
+  text-align: justify;
+}
+
+.age-info-invalid{
+  color: red;
+  @include age-info();
+}
+.age-info-valid{
+  color: green;
+  @include age-info();
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  height: 30vh;
+}

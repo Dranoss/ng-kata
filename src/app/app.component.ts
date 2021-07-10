@@ -29,11 +29,14 @@ export class AppComponent implements OnInit{
   }
 
   changeBackgroundColor(): void{
+    if(this.counter == 0){
+      this.conditionColor = 'white';
+    }
     if(this.counter >= 10){
-      this.conditionColor = '#27ae60';
+      this.conditionColor = '#a23ce7';
     }
     if(this.counter <= -10){
-      this.conditionColor = '#e74c3c';
+      this.conditionColor = '#d7e73c';
     }
 }
 }
