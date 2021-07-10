@@ -1,27 +1,25 @@
-# KataWemanity
+# Kata Wemanity
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+Bonjour, ceci est une petite application compteur Angular11.
 
-## Development server
+A l'initialisation, vous vous retrouverez sur la page 'Up' contenant un bouton 'Up!'.
+Si vous cliquez dessus ce bouton incrémentera le compteur en haut à droite de 1.
+Au niveau de la barre de navigation vous aurez 2 autres options, à savoir la page 'Down' ou la page 'Reset'.
+En ce qui concerne la page 'Down' le principe est le même que pour la page 'Up' sauf qu'un click sur le bouton décrémentera le compteur de 1.
+Si vous passez au dessus de 9, la page changera de couleur, pareil si vous passez en dessous de -9.
+Au delà de 30 actions (que ce soit sur le bouton up ou down) chaque click prendra la valeur click * 2, au delà de 60 actions x vaudra x * 4, au dela de 120 x vaudra x * 8 etc...
+Enfin, si vous souhaitez reinitialiser le compteur, il vous faudra vous rendre sur la page reset et rentrer votre date de naissance.
+Bien entendu, un grand pouvoir impliquant de  grandes responsabilités, il vous faudra être majeur pour que cela fonctionne.
+(Ah et j'oubliais, n'essayez pas de rafraichir la page pour reinitialiser le tout, j'ai un coup d'avance sur les petits chenapans ! )
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Lancer l'application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Lancez 'ng serve' une fois dans le dossier du projet si vous avez le port localhost:4200 déja ouvert sur votre navigateur, 
+sinon lancez 'ng serve -o' ou 'ng serve --open' pour ouvrir directement l'application dans un nouvel onglet!
 
-## Build
+## Me contacter 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+On ne me contacte pas, je suis Batman (non je plaisante, voici mon linkedin: https://www.linkedin.com/in/xavi-regnier/)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
